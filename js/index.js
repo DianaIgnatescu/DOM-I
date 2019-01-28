@@ -58,9 +58,11 @@ navItem[5].textContent = siteContent['nav']['nav-item-6'];
 //======adds two new items to the navigation system
 
 const newAnchor1 = document.createElement('a');
-newAnchor1.textContent = "Home"
+newAnchor1.textContent = "Home";
+newAnchor1.href = "#"
 const newAnchor2 = document.createElement('a');
-newAnchor2.textContent = "FAQ"
+newAnchor2.textContent = "FAQ";
+newAnchor2.href = "#"
 
 const nav = document.querySelectorAll('nav')[0];
 nav.appendChild(newAnchor2);

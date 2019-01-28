@@ -55,6 +55,17 @@ navItem[3].textContent = siteContent['nav']['nav-item-4'];
 navItem[4].textContent = siteContent['nav']['nav-item-5'];
 navItem[5].textContent = siteContent['nav']['nav-item-6'];
 
+//======adds two new items to the navigation system
+
+const newAnchor1 = document.createElement('a');
+newAnchor1.textContent = "Home"
+const newAnchor2 = document.createElement('a');
+newAnchor2.textContent = "FAQ"
+
+const nav = document.querySelectorAll('nav')[0];
+nav.appendChild(newAnchor2);
+nav.prepend(newAnchor1);
+
 //======changes color of the navigation text to green
 
 let navigation = document.querySelectorAll('header nav a');

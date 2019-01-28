@@ -81,6 +81,20 @@ ctaH1.textContent = siteContent['cta']['h1'];
 let ctaButton = document.querySelector('button');
 ctaButton.textContent = siteContent['cta']['button'];
 
+//=======stretch - add event listener
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', modifyText);
+
+function modifyText() {
+  if (button.textContent = "Get Started") {
+    button.textContent = "Awesome!!!";
+    button.style.backgroundColor = "orange";
+    button.style.color = "white";
+  }
+}
+
 //=======main-content
 //=======top-content
 
@@ -89,8 +103,6 @@ let mainBorder = document.querySelector('.main-content');
 mainBorder.style.borderTop = "2px dotted silver"; mainBorder.style.borderBottom = "2px dotted silver";
 
 //Updating the DOM using style overrides existing CSS.
-//
-//=======Stretch
 
 let topContentH4 = document.querySelectorAll('.main-content .top-content .text-content h4');
 topContentH4[0].textContent = siteContent['main-content']['features-h4'];

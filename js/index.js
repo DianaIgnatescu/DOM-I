@@ -38,5 +38,42 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+//=======header
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let ctaImg = document.getElementById('cta-img');
+
+let navItem = document.querySelectorAll('header nav a');
+
+let ctaH1 = document.querySelector('h1');
+
+let ctaButton = document.querySelector('button');
+
+//=======main-content
+//=======top-content
+
+let topContentH4 = document.querySelectorAll('.main-content .top-content .text-content h4');
+
+let topContentP = document.querySelectorAll('.-main-content .top-content .text-content p');
+
+//=======middle-img
+
+let middleImg = document.getElementById('middle-img');
+
+//=======bottom-content
+
+let bottomContentHeadings = document.querySelectorAll('.main-content .bottom-content .text-content h4');
+
+let bottomContentP = document.querySelectorAll('.-main-content .bottom-content .text-content p');
+
+//=======contact
+
+let contactH4 = document.querySelector('.contact h4');
+
+let contactP = document.querySelectorAll('.contact p');
+
+//=======footer
+
+let footerP = document.querySelector('footer p');

@@ -46,6 +46,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 let ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', siteContent['cta']['img-src']);
 
+//=======navigation 
 let navItem = document.querySelectorAll('header nav a');
 navItem[0].textContent = siteContent['nav']['nav-item-1'];
 navItem[1].textContent = siteContent['nav']['nav-item-2'];
@@ -53,6 +54,13 @@ navItem[2].textContent = siteContent['nav']['nav-item-3'];
 navItem[3].textContent = siteContent['nav']['nav-item-4'];
 navItem[4].textContent = siteContent['nav']['nav-item-5'];
 navItem[5].textContent = siteContent['nav']['nav-item-6'];
+
+//======changes color of the navigation text to green
+
+let navigation = document.querySelectorAll('header nav a');
+for (i = 0; i < navigation.length; i++) {
+  navigation[i].style.color = "green";
+}
 
 let ctaH1 = document.querySelector('h1');
 ctaH1.textContent = siteContent['cta']['h1'];

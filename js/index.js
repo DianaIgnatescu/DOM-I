@@ -84,6 +84,14 @@ ctaButton.textContent = siteContent['cta']['button'];
 //=======main-content
 //=======top-content
 
+//=======Stretch
+let mainBorder = document.querySelector('.main-content');
+mainBorder.style.borderTop = "2px dotted silver"; mainBorder.style.borderBottom = "2px dotted silver";
+
+//Updating the DOM using style overrides existing CSS.
+//
+//=======Stretch
+
 let topContentH4 = document.querySelectorAll('.main-content .top-content .text-content h4');
 topContentH4[0].textContent = siteContent['main-content']['features-h4'];
 topContentH4[1].textContent = siteContent['main-content']['about-h4'];
@@ -123,3 +131,4 @@ contactP[2].textContent = siteContent['contact']['email'];
 
 let footerP = document.querySelector('footer p');
 footerP.textContent = siteContent['footer']['copyright'];
+footerP.style.color = "grey";
